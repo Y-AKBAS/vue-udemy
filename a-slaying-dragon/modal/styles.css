@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.open-btn {
+    margin: 1rem;
+}
+
+.modal-btn {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 5000;
+}
+
+.modal-btn:hover {
+    cursor: pointer;
+}
+
+.description {
+    margin: 3rem 0rem;
+}
+
+dialog {
+    margin: auto;
+    padding: 2rem;
+    border: none;
+    border-radius: 4px;
+    max-width: 60%;
+    opacity: 0;
+    transition: all 0.3s allow-discrete;
+}
+
+dialog[open] {
+    opacity: 1;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s allow-discrete;
+}
+
+dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@starting-style {
+    dialog[open]::backdrop {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+@starting-style {
+    dialog[open] {
+        opacity: 0;
+    }
+}

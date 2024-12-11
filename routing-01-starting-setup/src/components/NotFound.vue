@@ -1,0 +1,5 @@
+<template>
+    <h2>
+        Sorry, Page Not Found :/
+    </h2>
+</template>
